@@ -273,14 +273,14 @@ a:hover {
 }
 
 .note--info {
-  background: linear-gradient(180deg, rgba(242, 248, 255, 0.96), rgba(233, 243, 252, 0.96));
-  border-color: rgba(21, 112, 239, 0.16);
-  border-left-color: rgba(21, 112, 239, 0.52);
-  box-shadow: 0 10px 22px rgba(17, 38, 59, 0.05);
+  background: linear-gradient(180deg, rgba(255, 246, 238, 0.98), rgba(255, 239, 227, 0.98));
+  border-color: rgba(182, 86, 42, 0.22);
+  border-left-color: #8b4520;
+  box-shadow: 0 12px 30px rgba(32, 34, 38, 0.08);
 }
 
 .note--info p {
-  color: #27425e;
+  color: #6f381d;
 }
 
 .to-top {

@@ -429,6 +429,14 @@ a:hover {
   .toc-card {
     position: static;
   }
+
+  .toc-card nav {
+    max-height: none;
+    overflow: visible;
+    scrollbar-width: auto;
+    padding-right: 0;
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 640px) {

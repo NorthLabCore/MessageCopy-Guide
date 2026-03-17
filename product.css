@@ -165,16 +165,20 @@ a {
 
 .hero__media {
   min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0;
 }
 
 .hero__banner {
   display: block;
-  width: 100%;
+  width: min(100%, 24rem);
   height: auto;
-  border-radius: 1.25rem;
-  border: 1px solid rgba(21, 112, 239, 0.10);
-  box-shadow: 0 16px 34px rgba(17, 38, 59, 0.10);
-  background: linear-gradient(180deg, rgba(233, 243, 251, 0.9), rgba(255, 255, 255, 0.9));
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 16px 30px rgba(17, 38, 59, 0.08));
 }
 
 .page {
@@ -187,9 +191,22 @@ a {
   padding: 1.5rem;
 }
 
+.panel--features,
+.panel--cta {
+  width: min(100%, 66rem);
+}
+
+.panel--features {
+  display: grid;
+  grid-template-columns: minmax(0, 19rem) minmax(0, 1fr);
+  gap: 1.8rem;
+  align-items: start;
+}
+
 .feature-list {
-  margin: 1rem 0 0;
+  margin: 0;
   padding-left: 1.25rem;
+  max-width: 40rem;
 }
 
 .feature-list li + li {
@@ -243,18 +260,40 @@ a {
 }
 
 .panel--cta {
+  padding: 1.9rem 1.7rem;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 250, 244, 0.96)),
     linear-gradient(180deg, rgba(182, 86, 42, 0.04), transparent);
+  border-color: rgba(182, 86, 42, 0.12);
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 1.4rem 1.8rem;
+  align-items: center;
+}
+
+.panel--cta .section-head h2 {
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
 }
 
 .cta__lead {
   margin: 0.9rem 0 0;
-  max-width: 42rem;
+  max-width: 40rem;
+}
+
+.cta__actions {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.8rem;
+  justify-self: end;
 }
 
 @media (max-width: 900px) {
   .hero__inner,
+  .panel--features,
+  .cta,
   .steps,
   .audience {
     grid-template-columns: 1fr;

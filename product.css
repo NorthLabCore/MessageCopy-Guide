@@ -310,8 +310,27 @@ a {
     padding: 1.2rem;
   }
 
+  .hero__copy {
+    order: 1;
+  }
+
+  .hero__media {
+    order: 2;
+    padding-top: 0.4rem;
+    justify-content: flex-start;
+  }
+
+  .hero__banner {
+    width: min(100%, 14.5rem);
+  }
+
   .hero__actions {
     flex-direction: column;
+  }
+
+  .cta__actions {
+    flex-direction: column;
+    justify-self: stretch;
   }
 
   .button {

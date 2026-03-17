@@ -199,7 +199,7 @@ a:hover {
 
 .toc-card nav {
   max-height: calc(100vh - 5.8rem);
-  overflow-y: scroll;
+  overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
   scrollbar-width: thin;

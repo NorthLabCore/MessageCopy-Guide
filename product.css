@@ -92,7 +92,7 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-size: clamp(1.5rem, 2.5vw, 2.15rem);
 }
 
 .section-head h2 {

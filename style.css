@@ -120,6 +120,114 @@ a:hover {
   filter: drop-shadow(0 10px 20px rgba(17, 38, 59, 0.08));
 }
 
+.promo {
+  padding: 0 1.25rem 1.5rem;
+}
+
+.promo__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.35rem;
+  display: grid;
+  grid-template-columns: minmax(15rem, 25rem) minmax(0, 1fr);
+  gap: 1.35rem;
+  align-items: center;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 251, 255, 0.95)),
+    linear-gradient(120deg, rgba(21, 112, 239, 0.05), rgba(182, 86, 42, 0.05));
+  border: 1px solid rgba(21, 112, 239, 0.12);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+.promo__media {
+  min-width: 0;
+}
+
+.promo__banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(21, 112, 239, 0.10);
+  box-shadow: 0 16px 34px rgba(17, 38, 59, 0.10);
+  background: linear-gradient(180deg, rgba(233, 243, 251, 0.9), rgba(255, 255, 255, 0.9));
+}
+
+.promo__copy {
+  min-width: 0;
+}
+
+.promo__eyebrow {
+  margin: 0 0 0.7rem;
+  color: var(--nav-deep);
+  font: 700 0.78rem/1.2 "IBM Plex Mono", monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.promo__copy h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.3vw, 1.9rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+
+.promo__lead {
+  margin: 0.85rem 0 0;
+  max-width: 38rem;
+  color: var(--text-soft);
+}
+
+.promo__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.1rem;
+}
+
+.promo__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background-color 0.16s ease, color 0.16s ease;
+}
+
+.promo__button:hover {
+  transform: translateY(-1px);
+}
+
+.promo__button--primary {
+  background: linear-gradient(135deg, #1570ef, #0f5dc6);
+  color: #fff;
+  box-shadow: 0 14px 26px rgba(21, 112, 239, 0.24);
+}
+
+.promo__button--primary:hover {
+  color: #fff;
+  box-shadow: 0 16px 30px rgba(21, 112, 239, 0.28);
+}
+
+.promo__button--secondary {
+  border: 1px solid rgba(21, 112, 239, 0.16);
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--nav-deep);
+  box-shadow: 0 10px 24px rgba(17, 38, 59, 0.06);
+}
+
+.promo__button--secondary:hover {
+  color: var(--nav);
+  border-color: rgba(21, 112, 239, 0.28);
+  background: rgba(255, 255, 255, 0.92);
+}
+
 .layout {
   max-width: 72rem;
   margin: 0 auto;
@@ -339,6 +447,10 @@ a:hover {
   .toc-card {
     position: static;
   }
+
+  .promo__inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -359,6 +471,7 @@ a:hover {
   }
 
   .hero__inner,
+  .promo__inner,
   .article section,
   .toc-card {
     padding: 1.2rem;
@@ -373,6 +486,18 @@ a:hover {
     bottom: 0.9rem;
     min-width: 0;
     padding-inline: 0.95rem;
+  }
+
+  .promo {
+    padding-bottom: 1.1rem;
+  }
+
+  .promo__actions {
+    flex-direction: column;
+  }
+
+  .promo__button {
+    width: 100%;
   }
 }
 

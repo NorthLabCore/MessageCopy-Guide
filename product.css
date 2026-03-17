@@ -290,6 +290,10 @@ a {
   justify-self: end;
 }
 
+.cta__media {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .hero__inner,
   .panel--features,
@@ -315,13 +319,7 @@ a {
   }
 
   .hero__media {
-    order: 2;
-    padding-top: 0.4rem;
-    justify-content: flex-start;
-  }
-
-  .hero__banner {
-    width: min(100%, 14.5rem);
+    display: none;
   }
 
   .hero__actions {
@@ -331,6 +329,19 @@ a {
   .cta__actions {
     flex-direction: column;
     justify-self: stretch;
+  }
+
+  .cta__media {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem;
+  }
+
+  .cta__logo {
+    display: block;
+    width: min(100%, 14.5rem);
+    height: auto;
+    filter: drop-shadow(0 12px 22px rgba(17, 38, 59, 0.08));
   }
 
   .button {

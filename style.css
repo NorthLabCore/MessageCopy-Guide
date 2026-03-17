@@ -431,6 +431,10 @@ a:hover {
     max-width: none;
   }
 
+  .hero h1 {
+    max-width: 8.5rem;
+  }
+
   .to-top {
     right: 0.9rem;
     bottom: 0.9rem;

@@ -366,6 +366,50 @@ a:hover {
   color: #6f381d;
 }
 
+.guide-channel {
+  padding: 1.7rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(232, 243, 255, 0.94)),
+    linear-gradient(180deg, rgba(21, 112, 239, 0.05), transparent);
+  border: 1px solid rgba(21, 112, 239, 0.16);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
+
+.guide-channel h2 {
+  margin: 0;
+  color: var(--nav-deep);
+}
+
+.guide-channel p {
+  margin: 0.9rem 0 0;
+  color: var(--text-soft);
+}
+
+.guide-channel__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid rgba(21, 112, 239, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--nav-deep);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 22px rgba(17, 38, 59, 0.06);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background-color 0.16s ease, color 0.16s ease;
+}
+
+.guide-channel__link:hover {
+  color: var(--nav);
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(21, 112, 239, 0.28);
+  box-shadow: 0 12px 24px rgba(17, 38, 59, 0.08);
+  transform: translateY(-1px);
+}
+
 .to-top {
   position: fixed;
   right: 1.25rem;
@@ -445,6 +489,10 @@ a:hover {
     padding: 1.2rem;
   }
 
+  .guide-channel {
+    padding: 1.2rem;
+  }
+
   .hero__lead {
     font-size: 1rem;
     max-width: none;
@@ -459,6 +507,10 @@ a:hover {
     bottom: 0.9rem;
     min-width: 0;
     padding-inline: 0.95rem;
+  }
+
+  .guide-channel__link {
+    width: 100%;
   }
 }
 

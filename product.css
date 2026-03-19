@@ -168,6 +168,20 @@ a {
   background: var(--paper-strong);
 }
 
+.button--channel {
+  border: 1px solid rgba(21, 112, 239, 0.18);
+  background: rgba(232, 243, 255, 0.92);
+  color: var(--nav-deep);
+  box-shadow: 0 8px 18px rgba(17, 38, 59, 0.06);
+}
+
+.button--channel:hover {
+  color: var(--nav);
+  border-color: rgba(21, 112, 239, 0.28);
+  background: rgba(243, 248, 255, 0.96);
+  box-shadow: 0 10px 22px rgba(17, 38, 59, 0.08);
+}
+
 .hero__media {
   min-width: 0;
   display: flex;
@@ -329,6 +343,7 @@ a {
 
   .hero__actions {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .cta__actions {
